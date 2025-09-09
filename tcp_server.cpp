@@ -48,7 +48,6 @@ int main(){
 		printf("bind() is OK!\n");
 	}
 
-    //if (listen(serverSocket, SOMAXCONN) == SOCKET_ERROR) {
 	if (listen(server_socket, 1) == SOCKET_ERROR) {
         printf("listen(): Error listening on socket...  %d\n", WSAGetLastError());
 		WSACleanup();

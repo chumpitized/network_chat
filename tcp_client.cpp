@@ -52,7 +52,6 @@ int main(){
 			if (send_buffer[len] == '\n') {
 				send_buffer[len] = '\0';
 			} else {			
-				//flush stdin
 				int c;
 				while ((c = getchar()) != '\n' && c != EOF) {};
 			}
